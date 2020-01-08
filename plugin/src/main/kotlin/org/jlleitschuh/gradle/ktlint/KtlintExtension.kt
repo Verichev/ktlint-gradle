@@ -60,6 +60,10 @@ internal constructor(
      */
     val outputColorName: Property<String> = objectFactory.property { set("") }
     /**
+     * Specify the output directory for reporters.
+     */
+    val outputDir: Property<String> = objectFactory.property { set("") }
+    /**
      * Whether or not to allow the build to continue if there are warnings;
      * defaults to {@code false}, as for any other static code analysis tool.
      * <p>
